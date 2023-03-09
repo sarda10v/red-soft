@@ -1,0 +1,51 @@
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  & h1 {
+    text-align: center;
+  }
+  .error_block {
+    text-align: center;
+    color: red;
+  }
+
+  .form_wrapper {
+    width: 350px;
+    text-align: right;
+
+    & input {
+      width: 350px;
+      margin: 10px 0;
+      border: 2px solid black;
+      border-radius: 12px;
+      outline: none;
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    & button {
+      background: black;
+      color: white;
+      font-size: 25px;
+      padding: 5px 18px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+    }
+    & button:hover {
+      background: rgb(255, 255, 255);
+      color: black;
+      border: 1px solid;
+    }
+  }
+}
+
+.passwordHint {
+  position: absolute;
+  top: 110%;
+  left: 130%;
+  transform: rotate(-25deg);
+}
