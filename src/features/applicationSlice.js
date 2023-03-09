@@ -13,7 +13,7 @@ export const authSignIn = createAsyncThunk(
         body: JSON.stringify({ username, password }),
       });
       const json = await res.json();
-      console.log(json);
+
       if (json.error) {
         return thunkAPI.rejectWithValue(json.error);
       }
